@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @font-face {
+            font-family: "project-font";
+            src: url("../fonts/URWGeometricArabic-Medium.ttf");
+
+        }
+
+        body {
+            direction: rtl;
+            text-align: right;
+            padding: 0;
+            margin: 0;
+            font-family: "project-font";
+            font-size: 11px;
+        }
+
+        :root {
+            --main: #91379e;
+            --main-2: #dcdada;
+            --main-3: #ececec;
+            --green-color: #95c11f;
+            --wh: #fff;
+            --b: #000;
+            --soft-gary: #fcfaff;
+            --space-gray: #a2a2a2;
+        }
+
+        .main-color {
+            color: var(--main) !important;
+        }
+
+        .main-color-2 {
+            color: var(--main-2) !important;
+        }
+
+        .box {
+            display: inline-block;
+            margin: 2px;
+            padding: 0;
+            width: 48%;
+        }
+
+        .box_content {
+            position: relative;
+            width: 100%;
+            height: 100px;
+        }
+
+        .box_content img {
+            width: 100%;
+            height: 100%;
+            /* object-fit: contain; */
+        }
+
+        .box_content .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #91379e;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .box .underline:not(:last-child) {
+            border-bottom: 1px solid #d9d9d9 !important
+        }
+
+        .contain-date {
+            /* padding: 8px 5px 10px 5px; */
+            padding: 4px 0;
+            border-radius: 5px;
+            border: 1px solid var(--main-3);
+            display: inline-block;
+            margin-bottom: 10px;
+            margin: 0 auto 10px auto;
+        }
+
+        .p-20 {
+            padding: 20px
+        }
+
+        .userImg {
+            width: 100px;
+            height: 100px;
+        }
+
+        .destinguished-box {
+            background-color: #92379e;
+            padding: 4px 5px;
+            border-radius: 5px;
+            color: white;
+
+        }
+
+        .showTime {
+            /* min-width: 170px; */
+            color: gray;
+            display: inline-block;
+            padding: 0 3px;
+        }
+
+        .gap-5 {
+            gap: 5px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+        .s-space {
+            margin: 20px;
+        }
+
+        .center {
+            width: fit-content;
+            margin: auto;
+        }
+
+        .underline {
+            padding: 5px 10px;
+        }
+
+
+        .first {
+            float: right;
+        }
+
+        .second {
+            float: left;
+        }
+
+        .underline::after,
+        .clear::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .p-10 {
+            padding: 5px;
+        }
+
+        .py-2 {
+            padding: 5px 0;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+        .text-muted {
+            color: gray;
+        }
+
+        .logo {
+            max-width: 50px;
+        }
+
+        .box {
+            border: 1px solid #d9d9d9;
+            border-radius: 10px;
+            clear: both;
+        }
+
+        /* .box:nth-of-type(odd) {
+            float: left;
+        } */
+        .text-center {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .icon {
+            width: 10px;
+            margin: 0 3px;
+        }
+    </style>
+</head>
+
+<div class="s-space">
+    <div class="container">
+        <!-- <div class="clear">
+            <div class="first">
+                <img src="img/person.png" alt="" class="userImg rounded-circle  mb-10">
+                <h6 class="mb-10"> عاصم عبدالله احمد محمد </h6>
+            </div>
+            <div class="second">
+                <img src="img/logo.png" alt="" class="logo">
+            </div>
+        </div> -->
+
+
+
+        <div class="center">
+            <div class="contain-date">
+                <span class="destinguished-box  wh-color">
+                    الحلقة
+                </span>
+                <span class="showTime" placeholder="">
+                    الكل
+                </span>
+                <img src="img/down.png" alt="" class="icon">
+            </div>
+            <div class="contain-date">
+                <span class="destinguished-box  wh-color">من</span>
+                <span class="showTime" placeholder="">
+                    2023-02-02
+                </span>
+                <img src="img/calendar.png" alt="" class="icon">
+            </div>
+            <div class="contain-date">
+                <span class="destinguished-box  wh-color">الي</span>
+                <span class="showTime" placeholder="">
+                    2023-04-02
+                </span>
+                <img src="img/calendar.png" alt="" class="icon">
+            </div>
+        </div>
+        <div class="box p-10" id="target">
+            <div class="box_content">
+                <img src="img/shape.svg" alt="">
+                <div class="text">
+                    2
+                </div>
+
+            </div>
+            <div class="text-center"> طالب / ة مميز / ة </div>
+        </div>
+
+        <div class="box p-10" id="target">
+            <div class="box_content">
+                <img src="img/shape.svg" alt="">
+                <div class="text">
+                    2
+                </div>
+            </div>
+            <div class="text-center"> طالب / ة مميز / ة </div>
+        </div>
+        <div class="box p-10" id="target">
+            <div class="box_content">
+                <img src="img/shape.svg" alt="">
+                <div class="text">
+                    2
+                </div>
+            </div>
+            <div class="text-center"> طالب / ة مميز / ة </div>
+        </div>
+
+        <div class="box p-10" id="target">
+            <div class="box_content">
+                <img src="img/shape.svg" alt="">
+                <div class="text">
+                    2
+                </div>
+            </div>
+            <div class="text-center"> طالب / ة مميز / ة </div>
+        </div>
+        <div class="box p-10" id="target">
+            <div class="box_content">
+                <img src="img/shape.svg" alt="">
+                <div class="text">
+                    2
+                </div>
+            </div>
+            <div class="text-center"> طالب / ة مميز / ة </div>
+        </div>
+
+        <div class="box p-10" id="target">
+            <div class="box_content">
+                <img src="img/shape.svg" alt="">
+                <div class="text">
+                    2
+                </div>
+            </div>
+            <div class="text-center"> طالب / ة مميز / ة </div>
+        </div>
+        <div class="box p-10" id="target">
+            <div class="box_content">
+                <img src="img/shape.svg" alt="">
+                <div class="text">
+                    2
+                </div>
+            </div>
+            <div class="text-center"> طالب / ة مميز / ة </div>
+        </div>
+
+        <div class="box p-10" id="target">
+            <div class="box_content">
+                <img src="img/shape.svg" alt="">
+                <div class="text">
+                    2
+                </div>
+            </div>
+            <div class="text-center"> طالب / ة مميز / ة </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+
+
+
+</html>
